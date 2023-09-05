@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>React App</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="container">
+    <div class="navbar">
+      <a class="nav" href="">Home</a>
+      <a class="nav" href="">Second</a>
+      <a class="nav" href="">Third</a>
+      <a class="nav" href="">Fourth</a>
+    </div>
+  </div>
+  <div id="root"></div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+  <div class="container">
+    <ImageSlider />
+  </div>
+
+  <div class="container">
+    <div class="hrefs">
+      <h1>Полезные ссылки:</h1>
+      <a class="href" href="https://ru.reactjs.org/">Ссылка 1</a>
+      <a class="href" href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks">Ссылка 2</a>
+      <a class="href" href="https://tailwindcss.com/">Ссылка 3</a>
+      <a class="href" href="https://www.react-hook-form.com/">Ссылка 4</a>
+      <a class="href" href="https://mantine.dev/">Ссылка 5</a>
+      <a class="href" href="https://mui.com/">Ссылка 6</a>
+      <a class="href" href="https://habr.com/ru/companies/timeweb/articles/588498/">Ссылка 7</a>
+      <a class="href" href="https://astro.build/">Ссылка 8</a>
+      <a class="href" href="https://www.prisma.io/">Ссылка 9</a>
+      <a class="href" href="https://www.mongodb.com/atlas/database">Ссылка 10</a>
+      <a class="href" href="https://docs.docker.com/compose/">Ссылка 11</a>
+      <a class="href" href="https://webpack.js.org/">Ссылка 12</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer">
+      <a class="footer-img" href="https://www.instagram.com/">Instagram</a>
+      <a class="footer-img" href="https://www.facebook.com/">Facebook</a>
+      <a class="footer-img" href="https://twitter.com/">Twitter</a>
+    </div>
+  </div>
+</body>
+
 </html>

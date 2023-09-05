@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ImageSlider from './ImageSlider';
+import './App.css'
+import img1 from './images/spiderman.webp';
+import img2 from './images/cat.avif'
+import img3 from './images/photo_2023-08-18_12-59-44.jpg'
+import img4 from './images/wen0mechainsama-wenomechainsama.gif'
 
 function App() {
+  const images = [img1, img2, img3, img4];
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1
+          style={{
+            alignItems: 'center'
+          }}
+        >Мой слайдер картинок&#128513;</h1>
       </header>
+      <main>
+        <ImageSlider images={images} />
+      </main>
     </div>
   );
 }
